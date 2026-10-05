@@ -1,0 +1,12 @@
+# Папки сборки .NET
+[Bb]in/
+[Oo]bj/
+
+# Настройки Visual Studio
+.vs/
+*.user
+*.suo
+
+# Логи
+logs/
+*.log
