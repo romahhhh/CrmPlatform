@@ -54,10 +54,10 @@ namespace UserService.Services
 
             var user = await _db.Users.FirstOrDefaultAsync(u => u.Email == email);
             if (user is null)
-                new InvalidOperationException("Неверный email или пароль.");
+                throw new InvalidOperationException("Неверный email или пароль.");
 
             if (!_hasher.Verify(request.Password, user.PasswordHash))
-                new InvalidOperationException("Неверный email или пароль.");
+                throw new InvalidOperationException("Неверный email или пароль.");
 
             return new AuthResponse(user.Id, user.Email, user.Name, _jwt.Generate(user));
         }
