@@ -14,6 +14,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Элементы решения", "Элементы решения", "{4AFE7AA9-1F2E-4BFE-8FD7-C5F11682FA0E}"
 	ProjectSection(SolutionItems) = preProject
 		.dockerignore = .dockerignore
+		.gitignore = .gitignore
 		docker-compose.yml = docker-compose.yml
 		init-db.sql = init-db.sql
 		README.md = README.md
